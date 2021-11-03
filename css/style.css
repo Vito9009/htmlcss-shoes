@@ -64,7 +64,7 @@ div{
 }
 
 .model-shoes{
-      overflow: scroll;
+      overflow: auto;
 }
 
 #modelshoes1{
