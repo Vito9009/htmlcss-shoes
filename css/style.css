@@ -1,28 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-.model-shoes{
+body{
+    text-transform: uppercase;
+    font-family: 'Ubuntu Mono';
+}
+
+nav{
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 2;
+}
+
+nav ul li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+}
+
+nav ul li a{
+      text-decoration: none;
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+      height: 50px;
+      width: 50px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      padding: 15px;
+      align-items: center;
+      display: flex;
+      box-shadow: 2px 4px rgb(0, 0, 0);
+}
+
+  div{
     height: 100vh;
     position: relative;
     text-align: center;
-}
-
-.model-shoes-1{
-    background-color: red;
-    color: yellow;
-}
-
-.model-shoes-2{
-    background-color: green;
-    color: yellow;
-}
-
-.model-shoes-3{
-    background-color: yellow;
-    color: green;
 }
 
 .box{
@@ -30,4 +50,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 30px;
+    height: 50vh;
+}
+
+.box img{
+      max-height: 100%;
+      max-width: 100%;
+}
+
+.model-shoes{
+      overflow: hidden;
+}
+
+#modelshoes1{
+    background-color:rgb(255, 0, 0);
+    color: rgb(255, 255, 0);
+}
+
+#modelshoes2{
+    background-color: rgb(0, 128, 0);
+    color: rgb(255, 255, 0);
+}
+
+#modelshoes3{
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 128, 0);
 }
