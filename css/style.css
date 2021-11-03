@@ -16,7 +16,7 @@ nav{
     position: fixed;
     top: 40px;
     right: 20px;
-    z-index: 2;
+    z-index: 1;
 }
 
 nav ul li{
@@ -36,10 +36,14 @@ nav ul li a{
       padding: 15px;
       align-items: center;
       display: flex;
-      box-shadow: 2px 4px rgb(0, 0, 0);
 }
 
-  div{
+nav ul li a:active{
+    box-shadow: 2px 4px rgb(0, 0, 0);
+    color: rgb(255, 127, 39);
+}
+
+div{
     height: 100vh;
     position: relative;
     text-align: center;
@@ -51,7 +55,7 @@ nav ul li a{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    height: 50vh;
+    height: 50%;
 }
 
 .box img{
@@ -60,7 +64,7 @@ nav ul li a{
 }
 
 .model-shoes{
-      overflow: hidden;
+      overflow: scroll;
 }
 
 #modelshoes1{
